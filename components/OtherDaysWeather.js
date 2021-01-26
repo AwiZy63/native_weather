@@ -19,8 +19,8 @@ export default function OtherDaysWeather({ data }) {
                         <Text style={styles.other_weather}>{daily.weather[0].description}</Text>
                     </View>
                     <View style={styles.other_weather_data_value_right}>
-                        <Text style={styles.other_temp_max}>{daily.temp.max}°</Text>
-                        <Text style={styles.other_temp_min}>{daily.temp.min}</Text>
+                        <Text style={styles.other_temp_max}>{Math.ceil(daily.temp.max)}°</Text>
+                        <Text style={styles.other_temp_min}>{Math.ceil(daily.temp.min)}</Text>
                     </View>
                 </View>
             </View>

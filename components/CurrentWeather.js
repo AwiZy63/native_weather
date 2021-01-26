@@ -16,8 +16,8 @@ export default function CurrentWeather({ data }) {
                 <Text style={styles.current_day_date}>{todayName}</Text>
                 <View style={styles.current_weather_data}>
                     <View style={styles.current_weather_data_value_left}>
-                        <Text style={styles.current_temp}>{todayCurrentTemp}°</Text>
-                        <Text style={styles.current_temp_feel}>{maxTemp}°</Text>
+                        <Text style={styles.current_temp}>{Math.ceil(todayCurrentTemp)}°</Text>
+                        <Text style={styles.current_temp_feel}>{Math.ceil(maxTemp)}°</Text>
                     </View>
                     <View style={styles.current_weather_data_value_right}>
                         <Image style={styles.current_weather_icon} source={todayWeatherIcon} />
